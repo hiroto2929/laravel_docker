@@ -6,7 +6,6 @@
 
 ```
 https://github.com/hiroto2929/laravel_docker.git
-
 ```
 
 cloneに成功したらlaravel_dockerというディレクトリができるので移動する
