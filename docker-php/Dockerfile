@@ -1,0 +1,6 @@
+FROM php:7-fpm
+RUN apt-get update && apt-get install -y \
+    vim \
+    git
+RUN docker-php-ext-install pdo_mysql
+COPY --from=composer:latest /usr/bin/composer /usr/bin/compose
