@@ -26,6 +26,11 @@ docker-compose up
 docker exec -it laravel_docker_app_1 bash
 ```
 
+ブラウザから確認する
+
+```
+http://localhost
+```
 
 下記でコンテナから出られる
 
