@@ -4,7 +4,8 @@ RUN apt-get update && apt-get install -y \
     git
 RUN docker-php-ext-install pdo_mysql
 RUN apt-get install -y sudo
-RUN sudo apt install php-mbstring php-xml php-json
+#RUN sudo apt install php-mbstring php-xml php-json
+#なんかこの部分あるとエラー出るようになったので修正
 RUN curl https://getcomposer.org/installer | php
 RUN sudo mv composer.phar /usr/local/bin/composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/compose
